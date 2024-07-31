@@ -109,16 +109,50 @@
         </sensor>
       </link>
     </model>
-    
+
     <include>
       <uri>model://runway</uri>
       <pose degrees="true">-29 545 0 0 0 363</pose>
     </include>
 
     <include>
+<<<<<<< Updated upstream
       <uri>model://iris_with_gimbal</uri>
+=======
+      <uri>model://iris_with_flow</uri>
+>>>>>>> Stashed changes
       <pose degrees="true">0 0 0.195 0 0 90</pose>
     </include>
 
+  <model name = "apriltaga">
+    <include>
+      <uri>model://apriltag_a</uri>
+      <pose degrees="true">1.30 1.67 0.216 0 0 45</pose>
+    </include>
+  </model>
+  <model name = "apriltagc">
+    <include>
+      <uri>model://apriltag_c</uri>
+      <pose degrees="true">1.645 1.65 0.216 0 0 45</pose>
+    </include>
+  </model>
+  <model name = "apriltagb">
+    <include>
+      <uri>model://apriltag_b</uri>
+      <pose degrees="true">1.69 1.328 0.216 0 0 45</pose>
+    </include>
+  </model>
+  <model name = "apriltagd">
+      <include>
+        <uri>model://apriltag_d</uri>
+        <pose degrees="true">1.35 1.33 0.216 0 0 45</pose>
+      </include>
+  </model>
+  <model name = "landing_station">
+    <include>
+      <uri>model://landing_station</uri>
+      <pose degrees="true">1.65 1.70 0 0 0 90</pose>
+    </include>
+  </model>
   </world>
 </sdf>

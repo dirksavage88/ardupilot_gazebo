@@ -11,6 +11,10 @@
       <pose degrees="true">0 -0.01 -0.124923 90 0 90</pose>    
     </include>
 
+    <!-- <include merge='true'> -->
+    <!--   <uri>model://flow_cam</uri> -->
+    <!--   <pose>-0.05 0 0.2 0 1.57 0</pose> -->
+    <!-- </include> -->
     <joint name="gimbal_joint" type="revolute">
       <parent>iris_with_standoffs::base_link</parent>
       <child>gimbal::base_link</child>
@@ -23,6 +27,12 @@
       </axis>
     </joint>
 
+    <!-- <joint name="CameraJoint" type="fixed"> -->
+    <!--   <parent>base_link</parent> -->
+    <!--   <child>flow_cam/base_link</child> -->
+      <!-- <pose relative_to="base_link">-0.05 0 0.2 0 1.57 0</pose> -->
+    <!--   <pose>-0.05 0 0.2 0 1.57 0</pose> -->
+    <!-- </joint> -->
     <!-- plugins -->
     <plugin filename="gz-sim-joint-state-publisher-system"
       name="gz::sim::systems::JointStatePublisher">

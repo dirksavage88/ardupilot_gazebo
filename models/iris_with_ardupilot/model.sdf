@@ -2,7 +2,7 @@
 <sdf version="1.9">
   <model name="iris_with_ardupilot">
     <include>
-      <uri>model://iris_with_standoffs</uri>
+      <uri>model://iris_with_gimbal</uri>
     </include>
 
     <!--
