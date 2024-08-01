@@ -116,11 +116,7 @@
     </include>
 
     <include>
-<<<<<<< Updated upstream
-      <uri>model://iris_with_gimbal</uri>
-=======
       <uri>model://iris_with_flow</uri>
->>>>>>> Stashed changes
       <pose degrees="true">0 0 0.195 0 0 90</pose>
     </include>
 
